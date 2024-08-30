@@ -1,0 +1,53 @@
+// map
+const numbers = [1, 2, 3, 4, 5];
+const square = num => num * 2;
+const squaredNumbers = numbers.map(square);
+console.log("map")
+console.log(squaredNumbers); 
+
+console.log("-----------------")
+
+// reduce()
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log("reduce")
+console.log(sum); // 15
+console.log("-----------------")
+
+// filter
+
+const numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const isEven = num => num % 2 === 0;
+const evenNumbers1 = numbers1.filter(isEven);
+console.log("filter")
+console.log(evenNumbers1);
+console.log("-----------------")
+
+// find
+
+const numbers2 = [3, 10, 18, 20, 25];
+const firstGreaterThanHundred = numbers2.find(num => num > 100);
+const SmallerThan11 = numbers2.find(num => num < 11);
+console.log("find the number that >  100")
+console.log(firstGreaterThanHundred); // undefined
+console.log("find the number that smaller than 11")
+console.log(SmallerThan11)
+console.log("-----------------")
+
+
+// some
+
+const numbers3 = [1, 3, 5, 7];
+
+const hasEvenNumber = numbers3.some(num => num % 2 === 0);
+const hasOddNumber = numbers3.some(num => num % 2 !== 0);
+console.log("some")
+console.log(hasEvenNumber); // true
+console.log(hasOddNumber);  // true
+console.log("-----------------")
+
+// flatmap
+ const numbers4 = [1, 2, 3, 4];
+const result = numbers4.flatMap(num => [num, num * 4]);
+console.log("flatmap")
+console.log(result); 
+
